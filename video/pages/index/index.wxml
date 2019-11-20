@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="choice">
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      当前选择人物：<text>{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}</text>
+    </view>
+  </picker>
+  </view>
+  <view class="content">
+  <view class="profile"><image src="../img/{{profile}}.png"></image></view>
+  <view class="attr">
+  <text>定位：输出/治疗/辅助\n</text>
+  <text>心法：花间游/离经易道</text>
+  </view>
+  </view>
+</view>
